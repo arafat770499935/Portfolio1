@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الأرجوانية للخياطة النسائية</title>
+  <style>
+    body {
+      margin: 0;
+      font-family:  Arial , sans-serif;
+      background-color: #f7f7f7;
+    }
+
+    header {
+      background-color: #800080; /* اللون الأرجواني */
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 22px;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: #d8bfd8;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: #4b004b;
+      text-decoration: none;
+      margin: 10px 15px;
+      font-weight: bold;
+    }
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      margin: 15px;
+      width: 300px;
+      transition: transform 0.2s;
+    }
+
+    .card img {
+      width: 100%;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card h3 {
+      padding: 10px;
+      text-align: center;
+      color: #800080;
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        width: 90%;
+      }
+
+      nav {
+        flex-direction: column;
+      }
+
+      nav a {
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  الأرجوانية للخياطة النسائية
+</header>
+
+<nav>
+  <a href="#abaya">عبايات</a>
+  <a href="#dresses">فساتين</a>
+  <a href="#jalabiya">جلابيات</a>
+  <a href="#custom">تفصيل حسب الطلب</a>
+</nav>
+
+<div class="grid" id="abaya">
+  <div class="card">
+    <img src="images/abaya1.jpg" alt="عباية 1">
+    <h3>عباية سوداء أنيقة</h3>
+  </div>
+  <div class="card">
+    <img src="images/abaya2.jpg" alt="عباية 2">
+    <h3>عباية مزخرفة</h3>
+  </div>
+</div>
+
+<div class="grid" id="dresses">
+  <div class="card">
+    <img src="images/dress1.jpg" alt="فستان 1">
+    <h3>فستان ملكي</h3>
+  </div>
+  <div class="card">
+    <img src="images/dress2.jpg" alt="فستان 2">
+    <h3>فستان ناعم</h3>
+  </div>
+</div>
+
+<div class="grid" id="jalabiya">
+  <div class="card">
+    <img src="images/jalabiya1.jpg" alt="جلابية 1">
+    <h3>جلابية صيفية</h3>
+  </div>
+  <div class="card">
+    <img src="images/jalabiya2.jpg" alt="جلابية 2">
+    <h3>جلابية راقية</h3>
+  </div>
+</div>
+
+<div class="grid" id="custom">
+  <div class="card">
+    <img src="images/custom1.jpg" alt="حسب الطلب 1">
+    <h3>تفصيل خاص 1</h3>
+  </div>
+  <div class="card">
+    <img src="images/custom2.jpg" alt="حسب الطلب 2">
+    <h3>تفصيل خاص 2</h3>
+  </div>
+</div>
+
+</body>
+</html>
